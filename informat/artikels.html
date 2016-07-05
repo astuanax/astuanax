@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html class="fuelux informat">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Artikels - Informat, iRegistratie</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/informat/assets/stylesheets/fuelux.css">
+  <link rel="stylesheet" href="/informat/assets/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/informat/assets/stylesheets/bootstrap-theme.css">
+  
+  
+  <link rel="canonical" href="http://www.astuanax.com/informat/artikels.html">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://www.astuanax.com/informat/feed.xml" />
+  <style type="text/css">
+  
+  tr.disabled{
+    color: gray;
+  }
+  .repeater thead th:first-child{
+    width: 50px;
+  }
+  .activiteitenRepeater thead th:nth-child(2) {
+    width: 50px;
+  }
+  .activiteitenRepeater thead th:nth-child(3) {
+    width: 150px;
+  }
+  </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/informat/assets/javascripts/bootstrap.min.js"></script>
+<script src="//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
+
+</head>
+
+
+  <body class="grid">
+    <nav class="navbar " id="navbar-func"><div class="container">
+  <div>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img src="/informat/assets/images/informatLogo.svg"></a>
+    </div>
+      <ul class="nav navbar-nav navbar-right hidden-xs">
+        <li><a href="">Help</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Jan Jansens <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa fa-home"></i> Startscherm</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i> Afmelden</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-bars"></i></a></li>
+      </ul>
+ <form class="navbar-form navbar-right hidden-xs" role="search">
+         <div class="input-group input-append dropdown combobox" data-initialize="combobox" id="myCombobox">
+          <input type="text" class="form-control">
+          <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li data-value="1" data-selected="true"><a href="#">Sint-Lievens college</a></li>
+      <li data-value="2"><a href="#">Sint Lutgardis</a></li>
+    </ul>
+      </div>
+      </div>
+       </form>
+    </div>
+</div></nav>
+
+<nav class="navbar navbar-default" id="navbar-main">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Beheren </a>
+          <ul class="dropdown-menu">
+            <li><a href="/informat/activiteiten.html">Activiteiten</a></li>
+            <li><a href="/informat/activiteiten.html"><i class="fa fa-plus"></i> Nieuw</a></li>
+            <li><a href="/informat/activiteiten.html"><i class="fa fa-tag"></i> Categoriëen</a></li>
+            
+            <li role="separator" class="divider"></li>
+            <li><a href="/informat/artikels.html">Artikels</a></li>
+            <li><a href="/informat/prijsklassen.html">Prijsklasse</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/informat/beschikbaarheid.html">Beschikbaarheid</a></li>
+            <li><a href="/informat/beschikbaarheid.html"><i class="fa fa-calendar-check-o"></i> Nieuw</a>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registreren </a>
+          <ul class="dropdown-menu">
+            <li><a href="/informat/activiteiten.html">Activiteiten</a></li>
+            <li><a href="/informat/artikels.html">Artikels</a></li>
+            <li><a href="/informat/prijsklassen.html">Prijsklasse</a></li>
+            <li><a href="/informat/beschikbaarheid.html">Beschikbaarheid</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afdrukken </a>
+          <ul class="dropdown-menu">
+            <li><a href="/informat/activiteiten.html">Activiteiten</a></li>
+            <li><a href="/informat/artikels.html">Artikels</a></li>
+            <li><a href="/informat/prijsklassen.html">Prijsklasse</a></li>
+            <li><a href="/informat/beschikbaarheid.html">Beschikbaarheid</a></li>
+          </ul>
+        </li>
+      </ul>
+       
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+
+
+	<div id="content-body">    
+		<div class="container">
+        <h1>Beheren: Artikels</h1>
+
+<div class="repeater" id="myRepeater" data-staticheight="false">
+    <div class="repeater-header">
+        <div class="repeater-header-left">
+          
+                        <button style="margin-right:5px;" class="btn btn-default pull-left" type="button" data-toggle="modal" data-target="#myModal">
+                            Nieuw <span class="hidden-sm hidden-xs">artikel</span>
+                        </button>
+                        <div class="checkbox pull-left" id="myCheckbox">
+  <label class="checkbox-custom" data-initialize="checkbox">
+    <input class="sr-only" type="checkbox" value="">
+    <span class="checkbox-label">Toon enkel actief</span>
+  </label>
+</div>
+        	
+        </div>
+        <div class="repeater-header-right">
+        	<div class="repeater-search">
+                <div class="search disabled input-group">
+                    <input type="search" class="form-control" placeholder="Zoeken">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="sr-only">Zoeken</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="btn-group selectlist disabled repeater-filters">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="selected-label"> </span>
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Filters</span>
+                </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                    <li data-value="all" data-selected="true" data-property="all"><a href="#">Meer</a></li>
+                    <li class="divider"></li>
+                    <li data-value="draft" data-property="status"><a href="#">Verwijderen</a></li>
+                    <li data-value="archived" data-property="status"><a href="#">Sorteren</a></li>
+                </ul>
+                <input class="hidden hidden-field" name="filterSelection" readonly="readonly" aria-hidden="true" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="repeater-viewport">
+        <div class="repeater-canvas"></div>
+        <div class="loader repeater-loader"></div>
+     </div>
+     <div class="repeater-footer">
+         <div class="repeater-footer-left">
+             <div class="repeater-itemization">
+                 <span><span class="repeater-start"></span> - <span class="repeater-end"></span> of <span class="repeater-count"></span> items</span>
+                 <div class="btn-group selectlist dropup" data-resize="auto">
+                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                         <span class="selected-label"> </span>
+                         <span class="caret"></span>
+                         <span class="sr-only">Toggle Dropdown</span>
+                     </button>
+                     <ul class="dropdown-menu" role="menu">
+                         <li data-value="10" data-selected="true"><a href="#">10</a></li>
+                         <li data-value="25"><a href="#">25</a></li>
+                         <li data-value="50"><a href="#">50</a></li>
+                     </ul>
+                     <input class="hidden hidden-field" name="itemsPerPage" readonly="readonly" aria-hidden="true" type="text">
+                 </div>
+                 <span>Per Page</span>
+             </div>
+         </div>
+         <div class="repeater-footer-right">
+             <div class="repeater-pagination">
+                 <button type="button" class="btn btn-default btn-sm repeater-prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                     <span class="sr-only">Previous Page</span>
+                 </button>
+                 <label class="page-label" id="myPageLabel">Page</label>
+                 <div class="repeater-primaryPaging active">
+                     <div class="input-group input-append dropdown combobox dropup">
+                         <input type="text" class="form-control" aria-labelledby="myPageLabel">
+                         <div class="input-group-btn">
+                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                 <span class="caret"></span>
+                                 <span class="sr-only">Toggle Dropdown</span>
+                             </button>
+                             <ul class="dropdown-menu dropdown-menu-right"></ul>
+                         </div>
+                     </div>
+                 </div>
+                 <input type="text" class="form-control repeater-secondaryPaging" aria-labelledby="myPageLabel">
+                 <span>of <span class="repeater-pages"></span></span>
+                 <button type="button" class="btn btn-default btn-sm repeater-next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                     <span class="sr-only">Next Page</span>
+                 </button>
+             </div>
+         </div>
+     </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Nieuw artikel</h4>
+      </div>
+      <div class="modal-body"><div class="container-fluid">
+        <form class="form-horizontal">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-sm-3 text-left" for="textinput">Code</label>
+  <div class="col-sm-9">
+    <input id="textinput" name="textinput" type="text" placeholder="Melk" class="form-control">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-sm-3 text-left" for="textinput">Omschrijving</label>
+  <div class="col-sm-9">
+    <input id="textinput" name="textinput" type="text" placeholder="Melk" class="form-control">
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-sm-3" for="selectbasic">Referentie iRekeningen</label>
+  <div class="col-sm-9">
+    <div class="btn-group selectlist" data-resize="auto" data-initialize="selectlist" id="selectbasic">
+      <button class="btn btn-default dropdown-toggle " data-toggle="dropdown" type="button">
+        <span class="selected-label">1_Melk</span>
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li data-value="Option one"><a href="#">1_Melk</a></li>
+        <li data-value="Option two"><a href="#">2_Melk</a></li>
+      </ul>
+      <input class="hidden hidden-field" name="selectbasic" readonly="readonly" aria-hidden="true" type="text">
+    </div>
+  </div>
+</div>
+
+</fieldset>
+</form>
+<div class="row"><div class="col-md-6">
+<h4>Artikel opties</h4></div><div class="col-md-6">
+ <ul class="nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Toevoegen</a></li>
+            <li><a href="#">Koppelen</a></li>
+            <li><a href="#">Formule</a></li>
+            <li><a href="#">Sorteren</a></li>
+            <li><a href="#">Verwijderen</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div></div>
+<div class="repeater" id="artikelOpties">
+    <div class="repeater-viewport">
+      <div class="repeater-canvas"></div>
+      <div class="loader repeater-loader"></div>
+  </div>
+          </div>
+
+<div class="row"><div class="col-md-6">
+<h4>Prijs variaties</h4></div><div class="col-md-6">
+ <ul class="nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Toevoegen</a></li>
+            <li><a href="#">Wijzigen</a></li>
+
+            <li><a href="#">Verwijderen</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div></div>
+<p>Geen prijsvarianten gevonden</p>
+</div></div>
+      <div class="modal-footer">
+        <a data-dismiss="modal">Annuleren</a>
+        <button type="button" class="btn btn-primary">Opslaan</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+function customColumnRenderer(helpers, callback) {
+        // determine what column is being rendered
+        var column = helpers.columnAttr;
+
+        // get all the data for the entire row
+        var rowData = helpers.rowData;
+        var customMarkup = '';
+
+        // only override the output for specific columns.
+        // will default to output the text value of the row item
+        switch(column) {
+          case 'txtIcon':
+            // let's combine name and description into a single column
+            customMarkup = '<i class="fa fa-'+rowData.txtIcon+'"></i>';
+            break;
+          case 'boolSelected':
+            customMarkup = '<div class="checkbox" id="myCheckbox"><label class="checkbox-custom '+ (rowData.boolSelected ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+            break;
+          default:
+            // otherwise, just use the existing text value
+            customMarkup = helpers.item.text();
+            break;
+        }
+
+        helpers.item.html(customMarkup);
+
+        callback();
+      }
+
+function customRowRenderer(helpers, callback) {
+        // let's get the id and add it to the "tr" DOM element
+        var item = helpers.item;
+        var disabled = (Math.random()<.25) ? "disabled" : "";
+        item.attr('class', disabled);
+        item.attr('id', helpers.rowData.id)
+        callback();
+      }
+      
+function staticDataSource(options, callback) {
+
+  // define the columns for the grid
+  var columns = [
+    {
+      'label': '',      // column header label
+      'property': 'boolSelected',   // the JSON property you are binding to
+      'sortable': true      // is the column sortable?
+    },
+    {
+      'label': 'Code',
+      'property': 'txtCode',
+      'sortable': true
+    },
+    {
+      'label': 'Description',
+      'property': 'txtDescription',
+      'sortable': true
+    }
+  ];
+
+
+
+
+
+  // generate the rows in your dataset
+  // note: the property names of your items should
+  // match the column properties defined above
+  //
+  function generateRandomData() {
+    var items = [];
+    var code = ['Abonnement', 'Avondopvang', 'Busvervoer','Middagmaal','Ochtendopvang'];
+    
+    function getRandom(arr) {
+      var min = 0;
+      var max = 2;
+      var index = Math.floor(Math.random() * (max - min + 1)) + min;
+      return arr[index];
+    }
+
+    for(var i=1; i<=10; i++) {
+      var item = {
+        id: i,
+        boolSelected: (Math.random()<.25),
+        txtDescription: getRandom(code),
+        txtCode: getRandom(code),
+      }
+      items.push(item);
+    };
+    console.log(JSON.stringify(items));
+    return items;
+  }
+
+  items = generateRandomData();
+
+  // transform array
+  var pageIndex = options.pageIndex;
+  var pageSize = options.pageSize;
+  var totalItems = items.length;
+  var totalPages = Math.ceil(totalItems / pageSize);
+  var startIndex = (pageIndex * pageSize) + 1;
+  var endIndex = (startIndex + pageSize) - 1;
+  if (endIndex > items.length) {
+    endIndex = items.length;
+  }
+
+  var rows = items.slice(startIndex - 1, endIndex);
+
+  // define the datasource
+  var dataSource = {
+    'page': pageIndex,
+    'pages': totalPages,
+    'count': totalItems,
+    'start': startIndex,
+    'end': endIndex,
+    'columns': columns,
+    'items': rows
+  };
+
+  // pass the datasource back to the repeater
+  callback(dataSource);
+}
+
+
+
+function customArtikelColumnRenderer(helpers, callback) {
+        // determine what column is being rendered
+        var column = helpers.columnAttr;
+
+        // get all the data for the entire row
+        var rowData = helpers.rowData;
+        var customMarkup = '';
+
+        // only override the output for specific columns.
+        // will default to output the text value of the row item
+        switch(column) {
+          case 'txtIcon':
+            // let's combine name and description into a single column
+            customMarkup = '<i class="fa fa-'+rowData.txtIcon+'"></i>';
+            break;
+          case 'boolSelected':
+            customMarkup = '<div class="checkbox" id="myCheckbox"><label class="checkbox-custom '+ (rowData.boolSelected ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+            break;
+          case 'boolVerbergen':
+            customMarkup = '<div class="checkbox" id="myCheckbox"><label class="checkbox-custom '+ (rowData.boolVerbergen ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+            break;
+          case 'txtType' :
+              customMarkup = '<select class="form-control"><option value="'+rowData.txtType+'" selected> ' + rowData.txtType + '</option><option value="Ja/Nee">Ja/Nee</option><option value="Tekst">Tekst</option><option>4</option> <option>5</option></select>';
+              break;
+          default:
+            // otherwise, just use the existing text value
+            customMarkup = helpers.item.text();
+            break;
+        }
+
+        helpers.item.html(customMarkup);
+
+        callback();
+      }
+
+
+function articleDataSource(options, callback) {
+
+  // define the columns for the grid
+  var columns = [
+    {
+      'label': '&nbsp;',      // column header label
+      'property': 'boolSelected',   // the JSON property you are binding to
+      'sortable': false      // is the column sortable?
+    },
+    {
+      'label': 'Optie',
+      'property': 'txtOptienaam',
+      'sortable': false
+    },
+    {
+      'label': 'Type',
+      'property': 'txtType',
+      'sortable': false
+    },
+    {
+      'label': 'Verbergen',
+      'property': 'boolVerbergen',
+      'sortable': false
+    },
+    {
+      'label': 'Prijs(€)',
+      'property': 'intPrijs',
+      'sortable': false
+    }
+  ];
+
+
+
+
+
+  // generate the rows in your dataset
+  // note: the property names of your items should
+  // match the column properties defined above
+  //
+  function generateRandomData() {
+    var items = [];
+    var opties= ['Broodje','Soep','Appel','Peer'];
+    var types = ['Tijd','Ja/Nee','Tekst'];
+    var prijzen = ['12.00','5.00','2.00'];
+    function getRandom(arr) {
+      var min = 0;
+      var max = 2;
+      var index = Math.floor(Math.random() * (max - min + 1)) + min;
+      return arr[index];
+    }
+   
+    for(var i=1; i<=5; i++) {
+      var item = {
+        id: i,
+        boolSelected: (Math.random()<.25),
+        boolVerbergen: (Math.random()<.25),
+        txtOptienaam: getRandom(opties),
+        txtType: getRandom(types),
+        intPrijs: '€ '+getRandom(prijzen),
+      }
+      items.push(item);
+    };
+    return items;
+  }
+
+  items = generateRandomData();
+
+  // transform array
+  var pageIndex = options.pageIndex;
+  var pageSize = options.pageSize;
+  var totalItems = items.length;
+  var totalPages = Math.ceil(totalItems / pageSize);
+  var startIndex = (pageIndex * pageSize) + 1;
+  var endIndex = (startIndex + pageSize) - 1;
+  if (endIndex > items.length) {
+    endIndex = items.length;
+  }
+
+  var rows = items.slice(startIndex - 1, endIndex);
+
+  // define the datasource
+  var dataSource = {
+    'page': pageIndex,
+    'pages': totalPages,
+    'count': totalItems,
+    'start': startIndex,
+    'end': endIndex,
+    'columns': columns,
+    'items': rows
+  };
+
+  // pass the datasource back to the repeater
+  callback(dataSource);
+}
+
+$(function() {
+  // initialize the repeater
+  var repeater = $('#myRepeater');
+  repeater.repeater({
+    // setup your custom datasource to handle data retrieval;
+    // responsible for any paging, sorting, filtering, searching logic
+    dataSource: staticDataSource,
+    list_columnRendered: customColumnRenderer,
+    list_rowRendered: customRowRenderer,
+    list_columnSizing: false,
+    list_highlightSortedColumn: true,
+    list_actions:  {
+  width: 37,
+  items: [{
+    name: 'edit',
+    html: '<span class="glyphicon glyphicon-pencil"></span> Aanpassen',
+    clickAction: function(helpers, callback) {
+      console.log('hey it worked');
+      console.log(helpers);
+      callback();
+      }
+    },
+    {
+    name: 'delete',
+    html: '<span class="glyphicon glyphicon-trash"></span> Verwijderen',
+    clickAction: function(helpers, callback) {
+      console.log('delete');
+      console.log(helpers);
+      callback();
+      }
+    }
+  ]
+}
+  });
+
+  var repeaterArtikels = $("#artikelOpties")
+  repeaterArtikels.repeater({
+    // setup your custom datasource to handle data retrieval;
+    // responsible for any paging, sorting, filtering, searching logic
+    dataSource: articleDataSource,
+    list_columnSizing: false,
+    list_highlightSortedColumn: true,
+    list_columnRendered: customArtikelColumnRenderer
+    
+  });
+});
+</script>
+		</div>
+	</div>
+    
+
+
+  </body>
+
+</html>

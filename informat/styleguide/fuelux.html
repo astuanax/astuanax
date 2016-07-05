@@ -1,0 +1,834 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Repeater</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/informat/styleguide/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/informat/styleguide/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/informat/styleguide/css/dashboard.css">
+    <link rel="stylesheet" href="/informat/styleguide/css/fuelux.css">		
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <div id="wrap">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Informat Styleguide</a>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+		  <div class="row">
+		          <div class="col-sm-3 col-md-2 sidebar">
+  					  <ul class="nav nav-sidebar">						
+    						<li><a href="/informat/styleguide/colors.html" class="active">Colors</a>							
+    						<li><a href="/informat/styleguide/custombootstrap.html" class="active">Custom</a>
+  							<ul class="list-unstyled nav nav-sidebar">
+  								<li><a href="/informat/styleguide/custombootstrap.html#func">Functional navbar</a></li>
+  								<li><a href="/informat/styleguide/custombootstrap.html#main">Main navbar</a></li>
+  								<li><a href="/informat/styleguide/custombootstrap.html#content">Body content</a></li>
+  								<li><a href="/informat/styleguide/custombootstrap.html#grid">Grid</a></li>
+  							</ul>
+  						</li>
+  						<li><a href="/informat/styleguide/bootstrap.html" class="active">Bootstrap</a>
+												
+  						<ul class="list-unstyled nav nav-sidebar">
+  							<li><a href="/informat/styleguide/bootstrap.html#navbar">Navbar</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#buttons">Buttons</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#typography">Typography</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#tables">Tables</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#forms">Forms</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#navs">Navs</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#indicators">Indicators</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#progress-bars">Progress bars</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#containers">Containers</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#dialogs">Dialogs</a></li>
+  						</ul>
+  						</li>
+  						<li role="separator" class="divider"></li>
+  						<li><a href="/informat/styleguide/fuelux.html" class="active">FuelUX</a>
+  					</ul>
+					  
+				</div>
+				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        
+<div class="page-header">
+  <h1>Repeater </h1>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    
+
+
+
+
+
+<div class="page-header">
+	<h2>FuelUX </h2>
+	<p> Depends on class "fuelux"</p>
+</div>
+
+<p>Please checkout the documentation for FuelUX @ http://getfuelux.com/</p>
+
+<h2>How to update?</h2>
+<p>All specific CSS has been placed in to the bootystrap-theme.Css file. Please download the files or use the CDN stylesheet for FuelUX and include the bootstrap-theme.css file</p>
+
+
+<h2>Getting started</h2>
+<ol>
+		<li>Add the <code>fuelux</code>class to a page wrapper (usually either <code>&lt;html&gt;</code> tag or <code>&lt;body&gt;</code> tag)</li>
+<div class="highlight"><pre style="position: relative;"><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"fuelux"</span><span class="nt">&gt;</span></code><div class="super-copy small">copy</div></pre></div>
+		<li>Include the CSS on your page somewhere:
+<div class="highlight"><pre style="position: relative;"><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"//www.fuelcdn.com/fuelux/3.11.0/css/fuelux.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span></code><div class="super-copy small">copy</div></pre></div>
+		</li>
+		<li>Include the JS on your page somewhere:
+<div class="highlight"><pre style="position: relative;"><code class="language-html" data-lang="html"><span class="c">&lt;!-- jQuery --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="c">&lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code><div class="super-copy small">copy</div></pre></div>
+		</li>
+	</ol>
+
+
+
+<div class="page-header">
+	<h2>FuelUX repeater</h2>
+	<p> Depends on class "fuelux"</p>
+</div>
+<p>Please checkout the documentation for the FuelUX repeater @ http://getfuelux.com/javascript.html#repeater</p>
+
+
+<div class="fuelux">
+<div class="repeater activiteitenRepeater" id="myRepeater" data-staticheight="false">
+    <div class="repeater-header">
+        <div class="repeater-header-left">
+          
+                        <button style="margin-right:5px;" class="btn btn-default pull-left" type="button" data-toggle="modal" data-target="#myModal">
+                            Nieuw<span class="hidden-sm hidden-xs">e activiteit</span>
+                        </button>
+                        <div class="checkbox pull-left" id="myCheckbox">
+  <label class="checkbox-custom" data-initialize="checkbox">
+    <input class="sr-only" type="checkbox" value="">
+    <span class="checkbox-label">Toon enkel actief</span>
+  </label>
+</div>
+        	
+        </div>
+        <div class="repeater-header-right">
+        	<div class="repeater-search">
+                <div class="search disabled input-group">
+                    <input type="search" class="form-control" placeholder="Zoeken">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="sr-only">Zoeken</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="btn-group selectlist disabled repeater-filters">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="selected-label"> </span>
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Filters</span>
+                </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                    <li data-value="all" data-selected="true" data-property="all"><a href="#">Meer</a></li>
+                    <li class="divider"></li>
+                    <li data-value="draft" data-property="status"><a href="#">Verwijderen</a></li>
+                    <li data-value="archived" data-property="status"><a href="#">Sorteren</a></li>
+                </ul>
+                <input class="hidden hidden-field" name="filterSelection" readonly="readonly" aria-hidden="true" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="repeater-viewport">
+        <div class="repeater-canvas"></div>
+        <div class="loader repeater-loader"></div>
+     </div>
+     <div class="repeater-footer">
+         <div class="repeater-footer-left">
+             <div class="repeater-itemization">
+                 <span><span class="repeater-start"></span> - <span class="repeater-end"></span> of <span class="repeater-count"></span> items</span>
+                 <div class="btn-group selectlist dropup" data-resize="auto">
+                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                         <span class="selected-label"> </span>
+                         <span class="caret"></span>
+                         <span class="sr-only">Toggle Dropdown</span>
+                     </button>
+                     <ul class="dropdown-menu" role="menu">
+                         <li data-value="10" data-selected="true"><a href="#">10</a></li>
+                         <li data-value="25"><a href="#">25</a></li>
+                         <li data-value="50"><a href="#">50</a></li>
+                     </ul>
+                     <input class="hidden hidden-field" name="itemsPerPage" readonly="readonly" aria-hidden="true" type="text">
+                 </div>
+                 <span>Per Page</span>
+             </div>
+         </div>
+         <div class="repeater-footer-right">
+             <div class="repeater-pagination">
+                 <button type="button" class="btn btn-default btn-sm repeater-prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                     <span class="sr-only">Previous Page</span>
+                 </button>
+                 <label class="page-label" id="myPageLabel">Page</label>
+                 <div class="repeater-primaryPaging active">
+                     <div class="input-group input-append dropdown combobox dropup">
+                         <input type="text" class="form-control" aria-labelledby="myPageLabel">
+                         <div class="input-group-btn">
+                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                 <span class="caret"></span>
+                                 <span class="sr-only">Toggle Dropdown</span>
+                             </button>
+                             <ul class="dropdown-menu dropdown-menu-right"></ul>
+                         </div>
+                     </div>
+                 </div>
+                 <input type="text" class="form-control repeater-secondaryPaging" aria-labelledby="myPageLabel">
+                 <span>of <span class="repeater-pages"></span></span>
+                 <button type="button" class="btn btn-default btn-sm repeater-next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                     <span class="sr-only">Next Page</span>
+                 </button>
+             </div>
+         </div>
+     </div>
+</div>
+
+<h2>Code: example javascript code</h2>
+<pre><code class="javascript">
+	
+	function customColumnRenderer(helpers, callback) {
+	    // determine what column is being rendered
+	    var column = helpers.columnAttr;
+
+	    // get all the data for the entire row
+	    var rowData = helpers.rowData;
+	    var customMarkup = &#x27;&#x27;;
+
+	    // only override the output for specific columns.
+	    // will default to output the text value of the row item
+	    switch (column) {
+	        case &#x27;txtIcon&#x27;:
+	            // let&#x27;s combine name and description into a single column
+	            customMarkup = &#x27;&lt;i class=&quot;fa fa-&#x27; + rowData.txtIcon + &#x27;&quot;&gt;&lt;/i&gt;&#x27;;
+	            break;
+	        case &#x27;boolSelected&#x27;:
+	            customMarkup = &#x27;&lt;div class=&quot;checkbox&quot;&gt;&lt;label class=&quot;checkbox-custom &#x27; + (rowData.boolSelected ? &#x27;checked&#x27; : &#x27;&#x27;) + &#x27;&quot; data-initialize=&quot;checkbox&quot;&gt;&lt;input class=&quot;sr-only&quot; type=&quot;checkbox&quot; value=&quot;&quot; &#x27; + (rowData.boolSelected ? &#x27;checked=&quot;checked&quot;&#x27; : &#x27;&#x27;) + &#x27;&gt;&lt;/label&gt;&lt;/div&gt;&#x27;;
+	            break;
+	        default:
+	            // otherwise, just use the existing text value
+	            customMarkup = helpers.item.text();
+	            break;
+	    }
+
+	    helpers.item.html(customMarkup);
+
+	    callback();
+	}
+
+	function customRowRenderer(helpers, callback) {
+	    // let&#x27;s get the id and add it to the &quot;tr&quot; DOM element
+	    var item = helpers.item;
+	    var disabled = (Math.random() &lt; .25) ? &quot;disabled&quot; : &quot;&quot;;
+	    item.attr(&#x27;class&#x27;, disabled);
+
+	    callback();
+	}
+
+	function staticDataSource(options, callback) {
+
+	    // define the columns for the grid
+	    var columns = [{
+	        &#x27;label&#x27;: &#x27;&lt;input type=&quot;checkbox&quot;&gt;&#x27;, // column header label
+	        &#x27;property&#x27;: &#x27;boolSelected&#x27;, // the JSON property you are binding to
+	        &#x27;sortable&#x27;: false // is the column sortable?
+	    }, {
+	        &#x27;label&#x27;: &#x27;&#x27;,
+	        &#x27;property&#x27;: &#x27;txtIcon&#x27;,
+	        &#x27;sortable&#x27;: false
+	    }, {
+	        &#x27;label&#x27;: &#x27;Code&#x27;,
+	        &#x27;property&#x27;: &#x27;txtCode&#x27;,
+	        &#x27;sortable&#x27;: true
+	    }, {
+	        &#x27;label&#x27;: &#x27;Activiteit&#x27;,
+	        &#x27;property&#x27;: &#x27;txtDescription&#x27;,
+	        &#x27;sortable&#x27;: true
+	    }];
+
+
+
+
+
+	    // generate the rows in your dataset
+	    // note: the property names of your items should
+	    // match the column properties defined above
+	    //
+
+	    function generateRandomData() {
+	        var items = [];
+	        var icons = [&#x27;cutlery&#x27;, &#x27;car&#x27;, &#x27;camera&#x27;, &#x27;university&#x27;];
+	        var code = [&#x27;WM&#x27;, &#x27;QSD&#x27;, &#x27;AZE&#x27;];
+	        var activiteiten = [&#x27;Warme Maaltijd&#x27;, &#x27;Naschoolse opvang&#x27;, &#x27;Schooluitstap&#x27;];
+
+	        function getRandom(arr) {
+	            var min = 0;
+	            var max = 2;
+	            var index = Math.floor(Math.random() * (max - min + 1)) + min;
+	            return arr[index];
+	        }
+
+	        for (var i = 1; i &lt;= 50; i++) {
+	            var item = {
+	                id: i,
+	                boolSelected: (Math.random() &lt; .25),
+	                txtDescription: getRandom(activiteiten),
+	                txtCode: getRandom(code),
+	                txtIcon: getRandom(icons)
+	            }
+	            items.push(item);
+	        };
+	        console.log(JSON.stringify(items));
+	        return items;
+	    }
+
+	    items = generateRandomData();
+
+	    // transform array
+	    var pageIndex = options.pageIndex;
+	    var pageSize = options.pageSize;
+	    var totalItems = items.length;
+	    var totalPages = Math.ceil(totalItems / pageSize);
+	    var startIndex = (pageIndex * pageSize) + 1;
+	    var endIndex = (startIndex + pageSize) - 1;
+	    if (endIndex &gt; items.length) {
+	        endIndex = items.length;
+	    }
+
+	    var rows = items.slice(startIndex - 1, endIndex);
+
+	    // define the datasource
+	    var dataSource = {
+	        &#x27;page&#x27;: pageIndex,
+	        &#x27;pages&#x27;: totalPages,
+	        &#x27;count&#x27;: totalItems,
+	        &#x27;start&#x27;: startIndex,
+	        &#x27;end&#x27;: endIndex,
+	        &#x27;columns&#x27;: columns,
+	        &#x27;items&#x27;: rows
+	    };
+
+	    // pass the datasource back to the repeater
+	    callback(dataSource);
+	}
+
+
+
+	function customArtikelColumnRenderer(helpers, callback) {
+	    // determine what column is being rendered
+	    var column = helpers.columnAttr;
+
+	    // get all the data for the entire row
+	    var rowData = helpers.rowData;
+	    var customMarkup = &#x27;&#x27;;
+
+	    // only override the output for specific columns.
+	    // will default to output the text value of the row item
+	    switch (column) {
+	        case &#x27;txtIcon&#x27;:
+	            // let&#x27;s combine name and description into a single column
+	            customMarkup = &#x27;&lt;i class=&quot;fa fa-&#x27; + rowData.txtIcon + &#x27;&quot;&gt;&lt;/i&gt;&#x27;;
+	            break;
+	        case &#x27;boolSelected&#x27;:
+	            customMarkup = &#x27;&lt;div class=&quot;checkbox&quot; id=&quot;myCheckbox&quot;&gt;&lt;label class=&quot;checkbox-custom &#x27; + (rowData.boolSelected ? &#x27;checked&#x27; : &#x27;&#x27;) + &#x27;&quot; data-initialize=&quot;checkbox&quot;&gt;&lt;input class=&quot;sr-only&quot; type=&quot;checkbox&quot; value=&quot;&quot; &#x27; + (rowData.boolSelected ? &#x27;checked=&quot;checked&quot;&#x27; : &#x27;&#x27;) + &#x27;&gt;&lt;/label&gt;&lt;/div&gt;&#x27;;
+	            break;
+	        case &#x27;boolVerbergen&#x27;:
+	            customMarkup = &#x27;&lt;div class=&quot;checkbox&quot; id=&quot;myCheckbox&quot;&gt;&lt;label class=&quot;checkbox-custom &#x27; + (rowData.boolVerbergen ? &#x27;checked&#x27; : &#x27;&#x27;) + &#x27;&quot; data-initialize=&quot;checkbox&quot;&gt;&lt;input class=&quot;sr-only&quot; type=&quot;checkbox&quot; value=&quot;&quot; &#x27; + (rowData.boolSelected ? &#x27;checked=&quot;checked&quot;&#x27; : &#x27;&#x27;) + &#x27;&gt;&lt;/label&gt;&lt;/div&gt;&#x27;;
+	            break;
+	        case &#x27;txtType&#x27;:
+	            customMarkup = &#x27;&lt;select class=&quot;form-control&quot;&gt;&lt;option value=&quot;&#x27; + rowData.txtType + &#x27;&quot; selected&gt; &#x27; + rowData.txtType + &#x27;&lt;/option&gt;&lt;option value=&quot;Ja/Nee&quot;&gt;Ja/Nee&lt;/option&gt;&lt;option value=&quot;Tekst&quot;&gt;Tekst&lt;/option&gt;&lt;option&gt;4&lt;/option&gt; &lt;option&gt;5&lt;/option&gt;&lt;/select&gt;&#x27;;
+	            break;
+	        default:
+	            // otherwise, just use the existing text value
+	            customMarkup = helpers.item.text();
+	            break;
+	    }
+
+	    helpers.item.html(customMarkup);
+
+	    callback();
+	}
+
+
+	function groepDataSource(options, callback) {
+
+	    // define the columns for the grid
+	    var columns = [{
+	        &#x27;label&#x27;: &#x27;&lt;input type=&quot;checkbox&quot;&gt;&#x27;, // column header label
+	        &#x27;property&#x27;: &#x27;boolSelected&#x27;, // the JSON property you are binding to
+	        &#x27;sortable&#x27;: false // is the column sortable?
+	    }, {
+	        &#x27;label&#x27;: &#x27;Groep&#x27;,
+	        &#x27;property&#x27;: &#x27;txtGroepnaam&#x27;,
+	        &#x27;sortable&#x27;: true
+	    }, {
+	        &#x27;label&#x27;: &#x27;Beschikbaarheid&#x27;,
+	        &#x27;property&#x27;: &#x27;txtBeschikbaarheid&#x27;,
+	        &#x27;sortable&#x27;: true
+	    }, ];
+
+
+
+
+
+	    // generate the rows in your dataset
+	    // note: the property names of your items should
+	    // match the column properties defined above
+	    //
+
+	    function generateRandomData() {
+	        var items = [];
+	        var groep = [&#x27;Klas 1A&#x27;, &#x27;Klas 1B&#x27;, &#x27;Klas 2A&#x27;, &#x27;Klas 3&#x27;];
+	        var beschikbaarheid = [&#x27;1ste trimester&#x27;, &#x27;2de trimester&#x27;, &#x27;3de trimester&#x27;];
+
+	        function getRandom(arr) {
+	            var min = 0;
+	            var max = 2;
+	            var index = Math.floor(Math.random() * (max - min + 1)) + min;
+	            return arr[index];
+	        }
+
+	        for (var i = 1; i &lt;= 5; i++) {
+	            var item = {
+	                id: i,
+	                boolSelected: (Math.random() &lt; .25),
+	                txtGroepnaam: getRandom(groep),
+	                txtBeschikbaarheid: getRandom(beschikbaarheid),
+	            }
+	            items.push(item);
+	        };
+	        return items;
+	    }
+
+	    items = generateRandomData();
+
+	    // transform array
+	    var pageIndex = options.pageIndex;
+	    var pageSize = options.pageSize;
+	    var totalItems = items.length;
+	    var totalPages = Math.ceil(totalItems / pageSize);
+	    var startIndex = (pageIndex * pageSize) + 1;
+	    var endIndex = (startIndex + pageSize) - 1;
+	    if (endIndex &gt; items.length) {
+	        endIndex = items.length;
+	    }
+
+	    var rows = items.slice(startIndex - 1, endIndex);
+
+	    // define the datasource
+	    var dataSource = {
+	        &#x27;page&#x27;: pageIndex,
+	        &#x27;pages&#x27;: totalPages,
+	        &#x27;count&#x27;: totalItems,
+	        &#x27;start&#x27;: startIndex,
+	        &#x27;end&#x27;: endIndex,
+	        &#x27;columns&#x27;: columns,
+	        &#x27;items&#x27;: rows
+	    };
+
+	    // pass the datasource back to the repeater
+	    callback(dataSource);
+	}
+
+	$(function() {
+	    // initialize the repeater
+	    var repeater = $(&#x27;#myRepeater&#x27;);
+	    repeater.repeater({
+	        // setup your custom datasource to handle data retrieval;
+	        // responsible for any paging, sorting, filtering, searching logic
+	        dataSource: staticDataSource,
+	        list_columnRendered: customColumnRenderer,
+	        list_rowRendered: customRowRenderer,
+	        list_columnSizing: false,
+	        list_highlightSortedColumn: true,
+
+	    });
+
+	    var repeaterArtikels = $(&quot;#groepen&quot;)
+	    repeaterArtikels.repeater({
+	        // setup your custom datasource to handle data retrieval;
+	        // responsible for any paging, sorting, filtering, searching logic
+	        dataSource: groepDataSource,
+	        list_columnSizing: false,
+	        list_highlightSortedColumn: true,
+	        list_columnRendered: customArtikelColumnRenderer
+
+	    });
+	});
+	
+
+</code></pre>
+
+</div>
+
+
+  </div>
+</div>
+
+
+		</div></div>
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="container-fluid"><div class="row"><div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <p>&copy; 2015 <a href="//www.astuanax.com">Len Dierickx @ Astuanax </a>
+        </p>
+      </div></div></div>
+    </div>
+
+    
+
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
+	
+	
+
+	<script type="text/javascript">
+	function customColumnRenderer(helpers, callback) {
+	        // determine what column is being rendered
+	        var column = helpers.columnAttr;
+
+	        // get all the data for the entire row
+	        var rowData = helpers.rowData;
+	        var customMarkup = '';
+
+	        // only override the output for specific columns.
+	        // will default to output the text value of the row item
+	        switch(column) {
+	          case 'txtIcon':
+	            // let's combine name and description into a single column
+	            customMarkup = '<i class="fa fa-'+rowData.txtIcon+'"></i>';
+	            break;
+	          case 'boolSelected':
+	            customMarkup = '<div class="checkbox"><label class="checkbox-custom '+ (rowData.boolSelected ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+	            break;
+	          default:
+	            // otherwise, just use the existing text value
+	            customMarkup = helpers.item.text();
+	            break;
+	        }
+
+	        helpers.item.html(customMarkup);
+
+	        callback();
+	      }
+
+	function customRowRenderer(helpers, callback) {
+	        // let's get the id and add it to the "tr" DOM element
+	        var item = helpers.item;
+	        var disabled = (Math.random()<.25) ? "disabled" : "";
+	        item.attr('class', disabled);
+
+	        callback();
+	      }
+      
+	function staticDataSource(options, callback) {
+
+	  // define the columns for the grid
+	  var columns = [
+	    {
+	      'label': '<input type="checkbox">',      // column header label
+	      'property': 'boolSelected',   // the JSON property you are binding to
+	      'sortable': false      // is the column sortable?
+	    },
+	    {
+	      'label': '',
+	      'property': 'txtIcon',
+	      'sortable': false
+	    },
+	    {
+	      'label': 'Code',
+	      'property': 'txtCode',
+	      'sortable': true
+	    },
+	    {
+	      'label': 'Activiteit',
+	      'property': 'txtDescription',
+	      'sortable': true
+	    }
+	  ];
+
+
+
+
+
+	  // generate the rows in your dataset
+	  // note: the property names of your items should
+	  // match the column properties defined above
+	  //
+	  function generateRandomData() {
+	    var items = [];
+	    var icons = ['cutlery', 'car', 'camera', 'university'];
+	    var code = ['WM', 'QSD', 'AZE'];
+	    var activiteiten = ['Warme Maaltijd', 'Naschoolse opvang','Schooluitstap'];
+	    function getRandom(arr) {
+	      var min = 0;
+	      var max = 2;
+	      var index = Math.floor(Math.random() * (max - min + 1)) + min;
+	      return arr[index];
+	    }
+
+	    for(var i=1; i<=50; i++) {
+	      var item = {
+	        id: i,
+	        boolSelected: (Math.random()<.25),
+	        txtDescription: getRandom(activiteiten),
+	        txtCode: getRandom(code),
+	        txtIcon: getRandom(icons)
+	      }
+	      items.push(item);
+	    };
+	    console.log(JSON.stringify(items));
+	    return items;
+	  }
+
+	  items = generateRandomData();
+
+	  // transform array
+	  var pageIndex = options.pageIndex;
+	  var pageSize = options.pageSize;
+	  var totalItems = items.length;
+	  var totalPages = Math.ceil(totalItems / pageSize);
+	  var startIndex = (pageIndex * pageSize) + 1;
+	  var endIndex = (startIndex + pageSize) - 1;
+	  if (endIndex > items.length) {
+	    endIndex = items.length;
+	  }
+
+	  var rows = items.slice(startIndex - 1, endIndex);
+
+	  // define the datasource
+	  var dataSource = {
+	    'page': pageIndex,
+	    'pages': totalPages,
+	    'count': totalItems,
+	    'start': startIndex,
+	    'end': endIndex,
+	    'columns': columns,
+	    'items': rows
+	  };
+
+	  // pass the datasource back to the repeater
+	  callback(dataSource);
+	}
+
+
+
+	function customArtikelColumnRenderer(helpers, callback) {
+	        // determine what column is being rendered
+	        var column = helpers.columnAttr;
+
+	        // get all the data for the entire row
+	        var rowData = helpers.rowData;
+	        var customMarkup = '';
+
+	        // only override the output for specific columns.
+	        // will default to output the text value of the row item
+	        switch(column) {
+	          case 'txtIcon':
+	            // let's combine name and description into a single column
+	            customMarkup = '<i class="fa fa-'+rowData.txtIcon+'"></i>';
+	            break;
+	          case 'boolSelected':
+	            customMarkup = '<div class="checkbox" id="myCheckbox"><label class="checkbox-custom '+ (rowData.boolSelected ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+	            break;
+	          case 'boolVerbergen':
+	            customMarkup = '<div class="checkbox" id="myCheckbox"><label class="checkbox-custom '+ (rowData.boolVerbergen ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+	            break;
+	          case 'txtType' :
+	              customMarkup = '<select class="form-control"><option value="'+rowData.txtType+'" selected> ' + rowData.txtType + '</option><option value="Ja/Nee">Ja/Nee</option><option value="Tekst">Tekst</option><option>4</option> <option>5</option></select>';
+	              break;
+	          default:
+	            // otherwise, just use the existing text value
+	            customMarkup = helpers.item.text();
+	            break;
+	        }
+
+	        helpers.item.html(customMarkup);
+
+	        callback();
+	      }
+
+
+	function groepDataSource(options, callback) {
+
+	  // define the columns for the grid
+	  var columns = [
+	    {
+	      'label': '<input type="checkbox">',      // column header label
+	      'property': 'boolSelected',   // the JSON property you are binding to
+	      'sortable': false      // is the column sortable?
+	    },
+	    {
+	      'label': 'Groep',
+	      'property': 'txtGroepnaam',
+	      'sortable': true
+	    },
+	    {
+	      'label': 'Beschikbaarheid',
+	      'property': 'txtBeschikbaarheid',
+	      'sortable': true
+	    },
+	  ];
+
+
+
+
+
+	  // generate the rows in your dataset
+	  // note: the property names of your items should
+	  // match the column properties defined above
+	  //
+	  function generateRandomData() {
+	    var items = [];
+	    var groep= ['Klas 1A','Klas 1B','Klas 2A','Klas 3'];
+	    var beschikbaarheid = ['1ste trimester','2de trimester','3de trimester'];
+	    function getRandom(arr) {
+	      var min = 0;
+	      var max = 2;
+	      var index = Math.floor(Math.random() * (max - min + 1)) + min;
+	      return arr[index];
+	    }
+   
+	    for(var i=1; i<=5; i++) {
+	      var item = {
+	        id: i,
+	        boolSelected: (Math.random()<.25),
+	        txtGroepnaam: getRandom(groep),
+	        txtBeschikbaarheid: getRandom(beschikbaarheid),
+	      }
+	      items.push(item);
+	    };
+	    return items;
+	  }
+
+	  items = generateRandomData();
+
+	  // transform array
+	  var pageIndex = options.pageIndex;
+	  var pageSize = options.pageSize;
+	  var totalItems = items.length;
+	  var totalPages = Math.ceil(totalItems / pageSize);
+	  var startIndex = (pageIndex * pageSize) + 1;
+	  var endIndex = (startIndex + pageSize) - 1;
+	  if (endIndex > items.length) {
+	    endIndex = items.length;
+	  }
+
+	  var rows = items.slice(startIndex - 1, endIndex);
+
+	  // define the datasource
+	  var dataSource = {
+	    'page': pageIndex,
+	    'pages': totalPages,
+	    'count': totalItems,
+	    'start': startIndex,
+	    'end': endIndex,
+	    'columns': columns,
+	    'items': rows
+	  };
+
+	  // pass the datasource back to the repeater
+	  callback(dataSource);
+	}
+
+	$(function() {
+	  // initialize the repeater
+	  var repeater = $('#myRepeater');
+	  repeater.repeater({
+	    // setup your custom datasource to handle data retrieval;
+	    // responsible for any paging, sorting, filtering, searching logic
+	    dataSource: staticDataSource,
+	    list_columnRendered: customColumnRenderer,
+	    list_rowRendered: customRowRenderer,
+	    list_columnSizing: false,
+	    list_highlightSortedColumn: true,
+	//     list_actions:  {
+	//   width: 37,
+	//   items: [{
+	//     name: 'edit',
+	//     html: '<span class="glyphicon glyphicon-pencil"></span> Aanpassen',
+	//     clickAction: function(helpers, callback) {
+	//       console.log('hey it worked');
+	//       console.log(helpers);
+	//       callback();
+	//       }
+	//     },
+	//     {
+	//     name: 'delete',
+	//     html: '<span class="glyphicon glyphicon-trash"></span> Verwijderen',
+	//     clickAction: function(helpers, callback) {
+	//       console.log('delete');
+	//       console.log(helpers);
+	//       callback();
+	//       }
+	//     }
+	//   ]
+	// }
+	  });
+
+	  var repeaterArtikels = $("#groepen")
+	  repeaterArtikels.repeater({
+	    // setup your custom datasource to handle data retrieval;
+	    // responsible for any paging, sorting, filtering, searching logic
+	    dataSource: groepDataSource,
+	    list_columnSizing: false,
+	    list_highlightSortedColumn: true,
+	    list_columnRendered: customArtikelColumnRenderer
+    
+	  });
+	});
+	</script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

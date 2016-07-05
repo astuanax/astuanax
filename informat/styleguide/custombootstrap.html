@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Custom Navigation</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/informat/styleguide/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/informat/styleguide/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/informat/styleguide/css/dashboard.css">
+    <link rel="stylesheet" href="/informat/styleguide/css/fuelux.css">		
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <div id="wrap">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Informat Styleguide</a>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+		  <div class="row">
+		          <div class="col-sm-3 col-md-2 sidebar">
+  					  <ul class="nav nav-sidebar">						
+    						<li><a href="/informat/styleguide/colors.html" class="active">Colors</a>							
+    						<li><a href="/informat/styleguide/custombootstrap.html" class="active">Custom</a>
+  							<ul class="list-unstyled nav nav-sidebar">
+  								<li><a href="/informat/styleguide/custombootstrap.html#func">Functional navbar</a></li>
+  								<li><a href="/informat/styleguide/custombootstrap.html#main">Main navbar</a></li>
+  								<li><a href="/informat/styleguide/custombootstrap.html#content">Body content</a></li>
+  								<li><a href="/informat/styleguide/custombootstrap.html#grid">Grid</a></li>
+  							</ul>
+  						</li>
+  						<li><a href="/informat/styleguide/bootstrap.html" class="active">Bootstrap</a>
+												
+  						<ul class="list-unstyled nav nav-sidebar">
+  							<li><a href="/informat/styleguide/bootstrap.html#navbar">Navbar</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#buttons">Buttons</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#typography">Typography</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#tables">Tables</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#forms">Forms</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#navs">Navs</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#indicators">Indicators</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#progress-bars">Progress bars</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#containers">Containers</a></li>
+  							<li><a href="/informat/styleguide/bootstrap.html#dialogs">Dialogs</a></li>
+  						</ul>
+  						</li>
+  						<li role="separator" class="divider"></li>
+  						<li><a href="/informat/styleguide/fuelux.html" class="active">FuelUX</a>
+  					</ul>
+					  
+				</div>
+				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        
+<div class="page-header">
+  <h1>Custom Navigation </h1>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    
+
+
+
+
+
+	<div class="page-header" id="func">
+		<h2>Functional navigation bar</h2>
+		<p>Depends on ID "navbar-func"</p>
+	</div>
+
+	<hr>
+	<h3>Example</h3>
+	<nav class="navbar " id="navbar-func">
+	  <div>
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <img src="/assets/images/informatLogo.svg"></a>
+	    </div>
+	      <ul class="nav navbar-nav navbar-right hidden-xs">
+	        <li><a href="">Help</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Jan Jansens <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#"><i class="fa fa-home"></i> Startscherm</a></li>
+	            <li><a href="#"><i class="fa fa-sign-out"></i> Afmelden</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="#"><i class="fa fa-bars"></i></a></li>
+	      </ul>
+	 <form class="navbar-form navbar-right hidden-xs" role="search">
+	         <div class="input-group input-append dropdown combobox" data-initialize="combobox" id="myCombobox">
+	          <input type="text" class="form-control">
+	          <div class="input-group-btn">
+	    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	    <ul class="dropdown-menu dropdown-menu-right">
+	      <li data-value="1" data-selected="true"><a href="#">Sint-Lievens college</a></li>
+	      <li data-value="2"><a href="#">Sint Lutgardis</a></li>
+	    </ul>
+	      </div>
+	      </div>
+	       </form>
+	    </div>
+</nav>
+		<h3>Code</h3>
+	<pre><code class="html">
+		&lt;nav class=&quot;navbar &quot; id=&quot;navbar-func&quot;&gt;&lt;div class=&quot;container&quot;&gt;
+		  &lt;div&gt;
+		    &lt;div class=&quot;navbar-header&quot;&gt;
+		      &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+		        &lt;img src=&quot;/informat/assets/images/informatLogo.svg&quot;&gt;&lt;/a&gt;
+		    &lt;/div&gt;
+		      &lt;ul class=&quot;nav navbar-nav navbar-right hidden-xs&quot;&gt;
+		        &lt;li&gt;&lt;a href=&quot;&quot;&gt;Help&lt;/a&gt;&lt;/li&gt;
+		        &lt;li class=&quot;dropdown&quot;&gt;
+		          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; Jan Jansens &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+		          &lt;ul class=&quot;dropdown-menu&quot;&gt;
+		            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt; Startscherm&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-sign-out&quot;&gt;&lt;/i&gt; Afmelden&lt;/a&gt;&lt;/li&gt;
+		          &lt;/ul&gt;
+		        &lt;/li&gt;
+		        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+		      &lt;/ul&gt;
+		 &lt;form class=&quot;navbar-form navbar-right hidden-xs&quot; role=&quot;search&quot;&gt;
+		         &lt;div class=&quot;input-group input-append dropdown combobox&quot; data-initialize=&quot;combobox&quot; id=&quot;myCombobox&quot;&gt;
+		          &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+		          &lt;div class=&quot;input-group-btn&quot;&gt;
+		    &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+		    &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+		      &lt;li data-value=&quot;1&quot; data-selected=&quot;true&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sint-Lievens college&lt;/a&gt;&lt;/li&gt;
+		      &lt;li data-value=&quot;2&quot;&gt;&lt;a href=&quot;#&quot;&gt;Sint Lutgardis&lt;/a&gt;&lt;/li&gt;
+		    &lt;/ul&gt;
+		      &lt;/div&gt;
+		      &lt;/div&gt;
+		       &lt;/form&gt;
+		    &lt;/div&gt;
+		&lt;/div&gt;&lt;/nav&gt;
+	</code></pre>	
+	
+	
+	<div class="page-header" id="main">
+		<h2> Main navigation bar</h2>
+		<p>Depends on ID "navbar-main"</p>
+	</div>
+
+	<h3>Example</h3>
+	<hr>
+	
+	<nav class="navbar navbar-default" id="navbar-main">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Beheren </a>
+	          <ul class="dropdown-menu">
+	            <li><a href="/informat/activiteiten.html">Activiteiten</a></li>
+	            <li><a href="/informat/activiteiten.html"><i class="fa fa-plus"></i> Nieuw</a></li>
+	            <li><a href="/informat/activiteiten.html"><i class="fa fa-tag"></i> Categoriëen</a></li>
+            
+	            <li role="separator" class="divider"></li>
+	            <li><a href="/informat/artikels.html">Artikels</a></li>
+	            <li><a href="/informat/prijsklassen.html">Prijsklasse</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="/informat/beschikbaarheid.html">Beschikbaarheid</a></li>
+	            <li><a href="/informat/beschikbaarheid.html"><i class="fa fa-calendar-check-o"></i> Nieuw</a>
+	          </li></ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registreren </a>
+	          <ul class="dropdown-menu">
+	            <li><a href="/informat/activiteiten.html">Activiteiten</a></li>
+	            <li><a href="/informat/artikels.html">Artikels</a></li>
+	            <li><a href="/informat/prijsklassen.html">Prijsklasse</a></li>
+	            <li><a href="/informat/beschikbaarheid.html">Beschikbaarheid</a></li>
+	          </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afdrukken </a>
+	          <ul class="dropdown-menu">
+	            <li><a href="/informat/activiteiten.html">Activiteiten</a></li>
+	            <li><a href="/informat/artikels.html">Artikels</a></li>
+	            <li><a href="/informat/prijsklassen.html">Prijsklasse</a></li>
+	            <li><a href="/informat/beschikbaarheid.html">Beschikbaarheid</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+       
+	    </div><!-- /.navbar-collapse -->
+	</nav>
+	
+		<h3>Code</h3>
+		
+	<pre><code class="html">
+		&lt;nav class=&quot;navbar navbar-default&quot; id=&quot;navbar-main&quot;&gt;
+		  &lt;div class=&quot;container&quot;&gt;
+		    &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+		    &lt;div class=&quot;navbar-header&quot;&gt;
+		      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;
+		        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+		        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+		        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+		        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+		      &lt;/button&gt;
+		    &lt;/div&gt;
+
+		    &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+		    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+		      &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+		        &lt;li class=&quot;dropdown&quot;&gt;
+		          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Beheren &lt;/a&gt;
+		          &lt;ul class=&quot;dropdown-menu&quot;&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/activiteiten.html&quot;&gt;Activiteiten&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/activiteiten.html&quot;&gt;&lt;i class=&quot;fa fa-plus&quot;&gt;&lt;/i&gt; Nieuw&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/activiteiten.html&quot;&gt;&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt; Categori&euml;en&lt;/a&gt;&lt;/li&gt;
+            
+		            &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/artikels.html&quot;&gt;Artikels&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/prijsklassen.html&quot;&gt;Prijsklasse&lt;/a&gt;&lt;/li&gt;
+		            &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/beschikbaarheid.html&quot;&gt;Beschikbaarheid&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/beschikbaarheid.html&quot;&gt;&lt;i class=&quot;fa fa-calendar-check-o&quot;&gt;&lt;/i&gt; Nieuw&lt;/a&gt;
+		          &lt;/li&gt;&lt;/ul&gt;
+		        &lt;/li&gt;
+		        &lt;li class=&quot;dropdown&quot;&gt;
+		          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Registreren &lt;/a&gt;
+		          &lt;ul class=&quot;dropdown-menu&quot;&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/activiteiten.html&quot;&gt;Activiteiten&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/artikels.html&quot;&gt;Artikels&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/prijsklassen.html&quot;&gt;Prijsklasse&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/beschikbaarheid.html&quot;&gt;Beschikbaarheid&lt;/a&gt;&lt;/li&gt;
+		          &lt;/ul&gt;
+		        &lt;/li&gt;
+		        &lt;li class=&quot;dropdown&quot;&gt;
+		          &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Afdrukken &lt;/a&gt;
+		          &lt;ul class=&quot;dropdown-menu&quot;&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/activiteiten.html&quot;&gt;Activiteiten&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/artikels.html&quot;&gt;Artikels&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/prijsklassen.html&quot;&gt;Prijsklasse&lt;/a&gt;&lt;/li&gt;
+		            &lt;li&gt;&lt;a href=&quot;/informat/beschikbaarheid.html&quot;&gt;Beschikbaarheid&lt;/a&gt;&lt;/li&gt;
+		          &lt;/ul&gt;
+		        &lt;/li&gt;
+		      &lt;/ul&gt;
+       
+		    &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+		  &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+		&lt;/nav&gt;
+	</code></pre>
+	
+	
+	
+	<div class="page-header" id="content">
+		<h2> Content</h2>
+		<p>Depends on ID "content-body"</p>
+	</div>
+	<p> All application code should beplaced inside a div with ID content-body, and wrapped in a ".container"</p>
+	<h3>Code</h3>
+	<pre><code class="html">
+		&lt;div id=&quot;content-body&quot;&gt;    
+				&lt;div class=&quot;container&quot;&gt;
+		        &lt;h1 class=&quot;page-header&quot;&gt;Beheren: Activiteiten&lt;/h1&gt;
+				&lt;/div&gt;
+		&lt;/div&gt;
+	</code></pre>
+
+
+
+	<div class="page-header" id="grid">
+		<h2>Grid</h2>
+		<p>Depends on class "grid"</p>
+	</div>
+	<p>A grid image is inluded and can be enabled to check the layout against the actual grid.</p>
+	<h3>Example</h3>
+	<div class="grid">
+			<h2>Page Header</h2>
+			<p>A paragrpag with some text</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<h3>Code</h3>
+	<pre><code class="html">&lt;div class=&quot;grid&quot;&gt;
+&lt;h2&gt;Page Header&lt;/h2&gt;
+&lt;p&gt;A paragrpag with some text&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;
+&lt;/div&gt;
+	</code></pre>
+
+  </div>
+</div>
+
+
+		</div></div>
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="container-fluid"><div class="row"><div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <p>&copy; 2015 <a href="//www.astuanax.com">Len Dierickx @ Astuanax </a>
+        </p>
+      </div></div></div>
+    </div>
+
+    
+
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min.js"></script>
+	
+	
+
+	<script type="text/javascript">
+	function customColumnRenderer(helpers, callback) {
+	        // determine what column is being rendered
+	        var column = helpers.columnAttr;
+
+	        // get all the data for the entire row
+	        var rowData = helpers.rowData;
+	        var customMarkup = '';
+
+	        // only override the output for specific columns.
+	        // will default to output the text value of the row item
+	        switch(column) {
+	          case 'txtIcon':
+	            // let's combine name and description into a single column
+	            customMarkup = '<i class="fa fa-'+rowData.txtIcon+'"></i>';
+	            break;
+	          case 'boolSelected':
+	            customMarkup = '<div class="checkbox"><label class="checkbox-custom '+ (rowData.boolSelected ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+	            break;
+	          default:
+	            // otherwise, just use the existing text value
+	            customMarkup = helpers.item.text();
+	            break;
+	        }
+
+	        helpers.item.html(customMarkup);
+
+	        callback();
+	      }
+
+	function customRowRenderer(helpers, callback) {
+	        // let's get the id and add it to the "tr" DOM element
+	        var item = helpers.item;
+	        var disabled = (Math.random()<.25) ? "disabled" : "";
+	        item.attr('class', disabled);
+
+	        callback();
+	      }
+      
+	function staticDataSource(options, callback) {
+
+	  // define the columns for the grid
+	  var columns = [
+	    {
+	      'label': '<input type="checkbox">',      // column header label
+	      'property': 'boolSelected',   // the JSON property you are binding to
+	      'sortable': false      // is the column sortable?
+	    },
+	    {
+	      'label': '',
+	      'property': 'txtIcon',
+	      'sortable': false
+	    },
+	    {
+	      'label': 'Code',
+	      'property': 'txtCode',
+	      'sortable': true
+	    },
+	    {
+	      'label': 'Activiteit',
+	      'property': 'txtDescription',
+	      'sortable': true
+	    }
+	  ];
+
+
+
+
+
+	  // generate the rows in your dataset
+	  // note: the property names of your items should
+	  // match the column properties defined above
+	  //
+	  function generateRandomData() {
+	    var items = [];
+	    var icons = ['cutlery', 'car', 'camera', 'university'];
+	    var code = ['WM', 'QSD', 'AZE'];
+	    var activiteiten = ['Warme Maaltijd', 'Naschoolse opvang','Schooluitstap'];
+	    function getRandom(arr) {
+	      var min = 0;
+	      var max = 2;
+	      var index = Math.floor(Math.random() * (max - min + 1)) + min;
+	      return arr[index];
+	    }
+
+	    for(var i=1; i<=50; i++) {
+	      var item = {
+	        id: i,
+	        boolSelected: (Math.random()<.25),
+	        txtDescription: getRandom(activiteiten),
+	        txtCode: getRandom(code),
+	        txtIcon: getRandom(icons)
+	      }
+	      items.push(item);
+	    };
+	    console.log(JSON.stringify(items));
+	    return items;
+	  }
+
+	  items = generateRandomData();
+
+	  // transform array
+	  var pageIndex = options.pageIndex;
+	  var pageSize = options.pageSize;
+	  var totalItems = items.length;
+	  var totalPages = Math.ceil(totalItems / pageSize);
+	  var startIndex = (pageIndex * pageSize) + 1;
+	  var endIndex = (startIndex + pageSize) - 1;
+	  if (endIndex > items.length) {
+	    endIndex = items.length;
+	  }
+
+	  var rows = items.slice(startIndex - 1, endIndex);
+
+	  // define the datasource
+	  var dataSource = {
+	    'page': pageIndex,
+	    'pages': totalPages,
+	    'count': totalItems,
+	    'start': startIndex,
+	    'end': endIndex,
+	    'columns': columns,
+	    'items': rows
+	  };
+
+	  // pass the datasource back to the repeater
+	  callback(dataSource);
+	}
+
+
+
+	function customArtikelColumnRenderer(helpers, callback) {
+	        // determine what column is being rendered
+	        var column = helpers.columnAttr;
+
+	        // get all the data for the entire row
+	        var rowData = helpers.rowData;
+	        var customMarkup = '';
+
+	        // only override the output for specific columns.
+	        // will default to output the text value of the row item
+	        switch(column) {
+	          case 'txtIcon':
+	            // let's combine name and description into a single column
+	            customMarkup = '<i class="fa fa-'+rowData.txtIcon+'"></i>';
+	            break;
+	          case 'boolSelected':
+	            customMarkup = '<div class="checkbox" id="myCheckbox"><label class="checkbox-custom '+ (rowData.boolSelected ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+	            break;
+	          case 'boolVerbergen':
+	            customMarkup = '<div class="checkbox" id="myCheckbox"><label class="checkbox-custom '+ (rowData.boolVerbergen ? 'checked' : '') +'" data-initialize="checkbox"><input class="sr-only" type="checkbox" value="" '+ (rowData.boolSelected ? 'checked="checked"' : '') +'></label></div>';
+	            break;
+	          case 'txtType' :
+	              customMarkup = '<select class="form-control"><option value="'+rowData.txtType+'" selected> ' + rowData.txtType + '</option><option value="Ja/Nee">Ja/Nee</option><option value="Tekst">Tekst</option><option>4</option> <option>5</option></select>';
+	              break;
+	          default:
+	            // otherwise, just use the existing text value
+	            customMarkup = helpers.item.text();
+	            break;
+	        }
+
+	        helpers.item.html(customMarkup);
+
+	        callback();
+	      }
+
+
+	function groepDataSource(options, callback) {
+
+	  // define the columns for the grid
+	  var columns = [
+	    {
+	      'label': '<input type="checkbox">',      // column header label
+	      'property': 'boolSelected',   // the JSON property you are binding to
+	      'sortable': false      // is the column sortable?
+	    },
+	    {
+	      'label': 'Groep',
+	      'property': 'txtGroepnaam',
+	      'sortable': true
+	    },
+	    {
+	      'label': 'Beschikbaarheid',
+	      'property': 'txtBeschikbaarheid',
+	      'sortable': true
+	    },
+	  ];
+
+
+
+
+
+	  // generate the rows in your dataset
+	  // note: the property names of your items should
+	  // match the column properties defined above
+	  //
+	  function generateRandomData() {
+	    var items = [];
+	    var groep= ['Klas 1A','Klas 1B','Klas 2A','Klas 3'];
+	    var beschikbaarheid = ['1ste trimester','2de trimester','3de trimester'];
+	    function getRandom(arr) {
+	      var min = 0;
+	      var max = 2;
+	      var index = Math.floor(Math.random() * (max - min + 1)) + min;
+	      return arr[index];
+	    }
+   
+	    for(var i=1; i<=5; i++) {
+	      var item = {
+	        id: i,
+	        boolSelected: (Math.random()<.25),
+	        txtGroepnaam: getRandom(groep),
+	        txtBeschikbaarheid: getRandom(beschikbaarheid),
+	      }
+	      items.push(item);
+	    };
+	    return items;
+	  }
+
+	  items = generateRandomData();
+
+	  // transform array
+	  var pageIndex = options.pageIndex;
+	  var pageSize = options.pageSize;
+	  var totalItems = items.length;
+	  var totalPages = Math.ceil(totalItems / pageSize);
+	  var startIndex = (pageIndex * pageSize) + 1;
+	  var endIndex = (startIndex + pageSize) - 1;
+	  if (endIndex > items.length) {
+	    endIndex = items.length;
+	  }
+
+	  var rows = items.slice(startIndex - 1, endIndex);
+
+	  // define the datasource
+	  var dataSource = {
+	    'page': pageIndex,
+	    'pages': totalPages,
+	    'count': totalItems,
+	    'start': startIndex,
+	    'end': endIndex,
+	    'columns': columns,
+	    'items': rows
+	  };
+
+	  // pass the datasource back to the repeater
+	  callback(dataSource);
+	}
+
+	$(function() {
+	  // initialize the repeater
+	  var repeater = $('#myRepeater');
+	  repeater.repeater({
+	    // setup your custom datasource to handle data retrieval;
+	    // responsible for any paging, sorting, filtering, searching logic
+	    dataSource: staticDataSource,
+	    list_columnRendered: customColumnRenderer,
+	    list_rowRendered: customRowRenderer,
+	    list_columnSizing: false,
+	    list_highlightSortedColumn: true,
+	//     list_actions:  {
+	//   width: 37,
+	//   items: [{
+	//     name: 'edit',
+	//     html: '<span class="glyphicon glyphicon-pencil"></span> Aanpassen',
+	//     clickAction: function(helpers, callback) {
+	//       console.log('hey it worked');
+	//       console.log(helpers);
+	//       callback();
+	//       }
+	//     },
+	//     {
+	//     name: 'delete',
+	//     html: '<span class="glyphicon glyphicon-trash"></span> Verwijderen',
+	//     clickAction: function(helpers, callback) {
+	//       console.log('delete');
+	//       console.log(helpers);
+	//       callback();
+	//       }
+	//     }
+	//   ]
+	// }
+	  });
+
+	  var repeaterArtikels = $("#groepen")
+	  repeaterArtikels.repeater({
+	    // setup your custom datasource to handle data retrieval;
+	    // responsible for any paging, sorting, filtering, searching logic
+	    dataSource: groepDataSource,
+	    list_columnSizing: false,
+	    list_highlightSortedColumn: true,
+	    list_columnRendered: customArtikelColumnRenderer
+    
+	  });
+	});
+	</script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
