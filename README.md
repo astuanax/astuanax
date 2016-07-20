@@ -1,55 +1,24 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# [Astuanax](http://www.astuanax.com)
 
-HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
+# [HIGH QUALITY WEBSITES ARE PLANNED, DESIGNED & BUILT WITH THE CUSTOMER IN MIND. LET US PLAN, DESIGN & BUILD YOUR WEBSITE.]
 
-This project is the product of many years of iterative development and combined community knowledge. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
+## Plan 
+Building a house without a plan and without an architect is something few people would do. In practice many people start off like that when they build websites for their customers.
+When we plan to create a website, we will explore your business model, we need to understand it in a way that we can translate that model into a customer centred website for your business.
+The aim of this explorative analysis is to understand the goal and needs of your business, and what you are trying to accomplish. Planning a site requires an understanding of your business needs and your customers, and how to bring these together.
+The results of the planning phase are a realistic time plan and a documented business model, often complemented by a website and content audit, and an optional SEO / social–media landscape sweep. All this will guide you smoothly through the design phase.
 
+## Design
+Designing a website is engineering. It is about finding an efficient solution to present the information to the customer and to create an effortless experience.
+Web design is about finding the most efficient way to present your business on the myriad of devices and browsers available to your customers.
+We design a mobile–first, readable, usable and appealing website for you and your customers.
+The design phase is completed by delivering final wireframes, prototypes and a graphic design.
 
-## Quick start
+## Build
+The concept of how to build your site, starts early in the planning and the design phase.
+We can provide all 3 stages (plan, design, build) separately, but in general they start in parallel in order to ensure a swift launch.
+Your website will be built for speed within the latest web standards where possible, ready for anyone, any search engine, and any browser to access.
+The website is typically delivered on a staging server for you to verify and finally installed on the server of your choice.
 
-Clone the git repo - `git clone git://github.com/h5bp/html5-boilerplate.git` - or [download it](https://github.com/h5bp/html5-boilerplate/zipball/master)
+All rights reserved - Len Dierickx - len@astuanax.com
 
-
-## Features
-
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* CSS normalizations and common bug fixes.
-* IE-specific classes for easier cross-browser control.
-* A default print stylesheet, performance optimized.
-* Mobile browser optimizations.
-* Protection against any stray `console.log` causing JavaScript errors in IE6/7.
-* The latest jQuery via CDN, with a local fallback.
-* A custom Modernizr build for feature detection.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
-
-
-## Contributing
-
-Anyone and everyone is welcome to [contribute](https://github.com/h5bp/html5-boilerplate/wiki/contribute). Hundreds of developers have helped make the HTML5 Boilerplate what it is today.
-
-
-## Project information
-
-* Source: http://github.com/h5bp/html5-boilerplate
-* Web: http://html5boilerplate.com
-* Docs: http://html5boilerplate.com/docs
-* Twitter: http://twitter.com/h5bp
-
-
-## License
-
-### Major components:
-
-* jQuery: MIT/GPL license
-* Modernizr: MIT/BSD license
-* Normalize.css: Public Domain
-
-### Everything else:
-
-The Unlicense (aka: public domain)
